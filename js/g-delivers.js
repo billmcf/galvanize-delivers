@@ -42,7 +42,6 @@ function renderCart() {
 
     tbody.append(`<tr>
       <td>${item.title}</td>
-      <td>1</td>
       <td>${formatPrice(price)}</td>
     </tr>`)
 

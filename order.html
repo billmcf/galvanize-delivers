@@ -1,4 +1,7 @@
-<!-- TODO      -->
+<!-- TODO     stripes in order table
+                menu and order headers aligned-
+                success message in a toast
+                responsive->
 
 <!DOCTYPE html>
 <html lang = "en">
@@ -14,7 +17,7 @@
 
 
     <title>Galvanize Delivers</title>
-</head>
+</head> 
 
 <body>
     <!––    Nav Bar Section             -->
@@ -22,7 +25,7 @@
         <div class="nav-wrapper blue darken-3">
             <a href="#" class="brand-logo">Galvanize Delivers</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="order.html">Order Delivery</a></li>
+                <li><a href="index.html">HOME</a></li>
             </ul>
         </div>
     </nav>
@@ -32,10 +35,10 @@
         <div class="container">
             <div class="col s12">
 
-                <div class="row">
+                <!-- <div class="row">
                     <h5 class = "col s4">Menu</h5>
                     <h5 class = "col s4 offset-s8">Order</h5>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col s3">
 
@@ -86,7 +89,7 @@
                               <img src="img/ice_cream.jpg">
                             </div>
                             <div class="card-content">
-                                <h6 class ="thin item-name">ICE CREAMBISCUIT</h6>
+                                <h6 class ="thin item-name">ICE CREAM BISCUIT</h6>
                                 <p class = "thin item-price">$7.99</p>
                             </div>
                             <div class="card-action">
@@ -105,7 +108,7 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td> Go Away</td>
+                              <td></td>
                             </tr>
                           </tbody>
                           <tfoot>
@@ -127,7 +130,39 @@
                             </tr>
                           </tfoot>
                         </table>
-                    </div>
+
+                        <form class="col s6">
+                          <div class="row">
+                            <div class="input-field">
+                               <i class="material-icons prefix red-text">account_circle</i>
+                              <input id="name" type="text" class="validate" required>
+                              <label for="name">Name</label>
+                            </div>
+                            <div class="row">
+                              <div class="input-field">
+                                   <i class="material-icons prefix red-text">call</i>
+                                <input id="phone-number" type="text" class="validate" required>
+                                <label for="phone-number">Phone Number</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field">
+                                   <i class="material-icons prefix red-text">domain</i>
+                                <textarea id="address" class=" materialize-textarea validate" required></textarea>
+                                <label for="address">Address</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn materialize-red waves-effect waves-light order" type="submit" name="action">PLACE ORDER</button>
+                                 <!-- <a class="btn materialize-red center-align order">PLACE ORDER</a> -->
+                            </div>
+                           </div>
+                          </form>
+                          <!-- <div>
+                              <a class="btn materialize-red order">PLACE ORDER</a>
+
+                          </div> -->
+
                 </div>
             </div>
         </div>
