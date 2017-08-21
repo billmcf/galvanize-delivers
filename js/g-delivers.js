@@ -24,6 +24,7 @@ function addToCart(itemOrdered) {
     console.log("item is ", itemOrdered)
     cart[cart.length] = itemOrdered
     console.log('cart', cart)
+    console.log("cart array length ", cart.length)
 
     renderCart()
 }
@@ -68,16 +69,26 @@ function formatPrice(price) {
   return '$' + price.toFixed(2)
 }
 
-/*
-    $( "#target" ).click(function() {
-      alert( "Handler for .click() called." );
-    });
+$('.order').click((event) => {
+    console.log("array length ", cart.length)
+    if (cart.length === 0) {
+        Materialize.toast('No Items In Cart', 4000)
+    } else {
+        Materialize.toast('We Appreciate Your Business. BON APPETIT', 4000)
+    }
+    //Materialize.toast('We Appreciate Your Business. BON APPETIT', 5000)
+
+  // // console.log('in add to order click')
+  // // event.preventDefault()
+  // // console.log("you clicked", event.target)
+  // let cardInfo = $(event.target)
+  //
+  // let price = cardInfo.find('.item-price').text()
+  // let title = cardInfo.find('.item-name').text()
+})
 
 
-    $( "#other" ).click(function() {
-  $( "#target" ).click();
-});
-*/
-
+// Initialize the side bar navigation functionality
+ $(".button-collapse").sideNav();
 
 })

@@ -12,3 +12,5 @@
     position: absolute;
     top: 15%;
 }
+.side-nav li > a:hover { background-color: white}
+.side-nav li > a { color: red }
