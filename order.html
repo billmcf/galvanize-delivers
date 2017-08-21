@@ -1,6 +1,4 @@
 <!-- TODO     stripes in order table
-                menu and order headers aligned-
-                responsive
                 Side bar nav doesn't appear -Special dispensation from Craig!!!
 -->
 
@@ -30,9 +28,8 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">HOME</a></li>
                 </ul>
-
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="index.html">Craig said it was OK for this not to work!!!!</a></li>
+                    <li><a href="index.html">Craig said it was OK for this not to work on mine!!!</a></li>
                 </ul>
             </div>
         </nav>
@@ -41,9 +38,12 @@
     <main>
         <div class="container">
             <div class="col s12">
-
                 <div class="row">
-                    <div class="col l3 med8 s12">
+                    <div class="col l6 m8 s12"><h5>MENU</h5></div>
+                    <div class="col l6 hide-on-med-and-down"><h5>ORDER</h5></div>
+                </div>
+                <div class="row">
+                    <div class="col l3 m8 s12">
 
                         <div class="card">
                             <div class="card-image">
@@ -72,8 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="col l3 med8 s12">
-
+                    <div class="col l3 m8 s12">
                         <div class="card">
                             <div class="card-image">
                               <img src="img/pizza.jpg">
@@ -101,8 +100,8 @@
                         </div>
 
                     </div>
-                    <!-- <div class="col s6"> -->
-                    <div class="col l6 med4 s12">
+                    <div class="col l6 m4 s12">
+                        <div class="col m4 s12 hide-on-large-only"><h5>ORDER</h5></div>
                         <table class="table table-striped" id="orders">
                           <thead>
                             <tr>
@@ -135,8 +134,7 @@
                           </tfoot>
                         </table>
 
-                        <!-- <form class="col s6"> -->
-                        <form class="col l6 med4 s12">
+                        <form class="col l6 m4 s12">
                           <div class="row">
                             <div class="input-field">
                                <i class="material-icons prefix red-text">account_circle</i>
@@ -159,7 +157,6 @@
                             </div>
                             <div class="row">
                                 <button class="btn materialize-red waves-effect waves-light order" type="submit" name="action">PLACE ORDER</button>
-                                 <!-- <a class="btn materialize-red center-align order">PLACE ORDER</a> -->
                             </div>
                            </div>
                           </form>
