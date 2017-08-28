@@ -70,14 +70,26 @@ function formatPrice(price) {
 }
 
 $('.order').click((event) => {
+    event.preventDefault();
+    let name = document.getElementById('name');
+    var phoneNumber = document.getElementById('phone-number');
+    var address = document.getElementById('address');
     console.log("array length ", cart.length)
+    console.log("phoneNumber length = ",phoneNumber.value.length);
     if (cart.length === 0) {
         Materialize.toast('No Items In Cart', 4000)
+    } else if (name.value.length === 0){
+        // Materialize.toast('We Appreciate Your Business. BON APPETIT!!!', 4000)
+        Materialize.toast('Please Enter A Name', 4000)
+    } else if (phoneNumber.value.length < 10){
+        console.log("in invalid phoneNumber");
+        Materialize.toast('Please Enter A 10 Digit Phone Number', 4000)
+    } else if (address.value.length < 10){
+        console.log("in invalid address");
+        Materialize.toast('Please Enter A Full Address', 4000)
     } else {
-        Materialize.toast('We Appreciate Your Business. BON APPETIT', 4000)
+        Materialize.toast('We Appreciate Your Business. BON APPETIT!!!', 5000)
     }
-    //Materialize.toast('We Appreciate Your Business. BON APPETIT', 5000)
-
   // // console.log('in add to order click')
   // // event.preventDefault()
   // // console.log("you clicked", event.target)
